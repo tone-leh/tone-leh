@@ -1,18 +1,17 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1426,100:1C2E4A&height=190&section=header&text=leh&fontColor=C9A227&fontSize=64&fontAlignY=36&desc=LA%20%E2%87%84%20Taipei&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="leh" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1426,100:1C2E4A&height=190&section=header&text=leh&fontColor=C9A227&fontSize=64&fontAlignY=36&desc=not%20a%20CS%20major%20%C2%B7%20coding%20because%20of%20AI&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="leh" />
 
 <a href="https://github.com/tone-leh">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=C9A227&center=true&vCenter=true&width=520&height=40&lines=Hi%2C+I'm+leh;LA+%E2%87%84+Taipei%2C+two+time+zones%2C+one+terminal;Building+with+Claude+%26+Codex;Patches+that+survive+npm+update;Precision+is+a+feature" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=C9A227&center=true&vCenter=true&width=520&height=40&lines=Hi%2C+I%27m+leh;Not+a+CS+major;AI+got+me+into+coding;Building+small+things+that+help;Small+still+counts" alt="typing" />
 </a>
 
-**Bilingual builder · AI-native workflows · always between two cities**<br/>
-中英双语 · 用 AI 搭工具 · 常驻洛杉矶与台北之间
+**Not a CS major. AI got me into coding. Trying to build things that help — even a little.**<br/>
+非 CS 专业，因为 AI 开始写代码。想做一些对人有帮助的事，哪怕很小。
 
-<img src="https://img.shields.io/badge/Los_Angeles-UTC−8-1C2E4A?style=flat-square&labelColor=0B1426" />
-<img src="https://img.shields.io/badge/Taipei-UTC+8-1C2E4A?style=flat-square&labelColor=0B1426" />
-<img src="https://img.shields.io/badge/EN_%2F_中文-C9A227?style=flat-square&labelColor=0B1426" />
+<img src="https://img.shields.io/badge/background-non--CS-1C2E4A?style=flat-square&labelColor=0B1426" />
+<img src="https://img.shields.io/badge/learning-by_building-1C2E4A?style=flat-square&labelColor=0B1426" />
 <img src="https://komarev.com/ghpvc/?username=tone-leh&color=C9A227&style=flat-square&label=views" />
 
 </div>
@@ -21,10 +20,10 @@
 
 ### 🧭 About · 关于我
 
-- 🌏 Splitting my time between **Los Angeles** and **Taipei** — 两个时区，同一个终端
-- 🤖 Running a multi-model setup: **Claude** + **Codex**, glued together with **OpenCodex**
-- ⚙️ Into agent tooling, local-first setups, and automating the boring parts of running a business
-- 💬 Happy to talk in English or 中文
+- 🎓 **Not a CS major.** I didn't study programming — I started writing code because AI made it possible.
+- 🤖 I build with **Claude** and **Codex**: I bring the problem, the judgment and the testing; AI helps me write the code.
+- 🌱 What I want: to make things that are genuinely useful to people, **even if they're small**.
+- 🧩 Most of what I build starts as a fix for my own daily tools, then gets cleaned up so others can use it too.
 
 <br/>
 
@@ -85,7 +84,7 @@
 
 <div align="center">
 
-<sub>Precision is a feature, not a finish. · 精确是功能，不是装饰。</sub>
+<sub>Small things, done carefully, still count. · 小事认真做，也算贡献。</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1C2E4A,100:0B1426&height=100&section=footer" width="100%" />
 
