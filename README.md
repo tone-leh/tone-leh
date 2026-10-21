@@ -7,7 +7,7 @@
 **Not a CS major. AI got me into code.**<br/>
 **I build small things, hoping some of them help.**
 
-<sub>非科班出身，因为 AI 开始写代码。做些小东西，希望对人有用。</sub>
+<sub>非科班出身，因为 AI 开始写代码。做些东西，希望有用。</sub>
 
 <br/><br/>
 
