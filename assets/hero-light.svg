@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 326" width="900" height="326" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="900" y2="326" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8F6F1"/>
+      <stop offset="100%" stop-color="#F1EDE3"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="0" y1="88" x2="0" y2="152" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#121418"/>
+      <stop offset="100%" stop-color="#7D5E22"/>
+    </linearGradient>
+    <linearGradient id="topShimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C29C4E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C29C4E" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#C29C4E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rowSheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9A7732" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#9A7732" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#9A7732" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ambientGlow" cx="76%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#9A7732" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#9A7732" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect x="0.5" y="0.5" width="899" height="325" rx="10"/>
+    </clipPath>
+    <clipPath id="activeRowClip">
+      <rect x="492" y="186" width="352" height="50" rx="5"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .serif { font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, 'Songti SC', serif; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+    .mono { font-family: 'SF Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace; }
+
+    /* Slow horological orbital ring */
+    .orbit-spin {
+      transform-origin: 228px 152px;
+      animation: orbitSpin 56s linear infinite;
+    }
+    @keyframes orbitSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Top border shimmer beam */
+    .border-beam {
+      animation: beamSlide 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes beamSlide {
+      0% { transform: translateX(-220px); opacity: 0; }
+      12% { opacity: 1; }
+      82% { opacity: 1; }
+      100% { transform: translateX(920px); opacity: 0; }
+    }
+
+    /* Status jewel gentle pulse */
+    .jewel-pulse {
+      animation: jewelPulse 3.2s ease-in-out infinite;
+    }
+    @keyframes jewelPulse {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.4; }
+    }
+
+    /* THE DECISION 11s Choreographed Loop */
+    /* Row 01: Claude Code strike 8% -> 16%, hold to 86% */
+    .strike-1 {
+      stroke-dasharray: 120;
+      stroke-dashoffset: 120;
+      animation: strike1 11s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+    @keyframes strike1 {
+      0%, 7% { stroke-dashoffset: 120; opacity: 0; }
+      8% { opacity: 1; }
+      16%, 86% { stroke-dashoffset: 0; opacity: 0.9; }
+      94%, 100% { stroke-dashoffset: 120; opacity: 0; }
+    }
+    .row1-txt {
+      animation: dim1 11s ease-in-out infinite;
+    }
+    @keyframes dim1 {
+      0%, 9% { opacity: 0.9; }
+      16%, 86% { opacity: 0.34; }
+      94%, 100% { opacity: 0.9; }
+    }
+    .tag1 {
+      animation: showTag1 11s ease-in-out infinite;
+    }
+    @keyframes showTag1 {
+      0%, 11% { opacity: 0; transform: translateX(4px); }
+      18%, 85% { opacity: 0.78; transform: translateX(0); }
+      93%, 100% { opacity: 0; transform: translateX(4px); }
+    }
+
+    /* Row 02: Codex / ChatGPT strike 20% -> 28%, hold to 86% */
+    .strike-2 {
+      stroke-dasharray: 148;
+      stroke-dashoffset: 148;
+      animation: strike2 11s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+    @keyframes strike2 {
+      0%, 19% { stroke-dashoffset: 148; opacity: 0; }
+      20% { opacity: 1; }
+      28%, 86% { stroke-dashoffset: 0; opacity: 0.9; }
+      94%, 100% { stroke-dashoffset: 148; opacity: 0; }
+    }
+    .row2-txt {
+      animation: dim2 11s ease-in-out infinite;
+    }
+    @keyframes dim2 {
+      0%, 21% { opacity: 0.9; }
+      28%, 86% { opacity: 0.34; }
+      94%, 100% { opacity: 0.9; }
+    }
+    .tag2 {
+      animation: showTag2 11s ease-in-out infinite;
+    }
+    @keyframes showTag2 {
+      0%, 23% { opacity: 0; transform: translateX(4px); }
+      30%, 85% { opacity: 0.78; transform: translateX(0); }
+      93%, 100% { opacity: 0; transform: translateX(4px); }
+    }
+
+    /* Row 03: Google Antigravity + Gemini illuminates 32% -> 88% */
+    .row3-frame {
+      animation: glow3 11s ease-in-out infinite;
+    }
+    @keyframes glow3 {
+      0%, 28% { stroke-opacity: 0.28; fill-opacity: 0.25; }
+      36%, 86% { stroke-opacity: 0.95; fill-opacity: 1; }
+      94%, 100% { stroke-opacity: 0.28; fill-opacity: 0.25; }
+    }
+    .row3-badge {
+      animation: badge3 11s ease-in-out infinite;
+    }
+    @keyframes badge3 {
+      0%, 30% { opacity: 0.45; }
+      37%, 86% { opacity: 1; }
+      94%, 100% { opacity: 0.45; }
+    }
+    .row3-sheen {
+      animation: sheen3 11s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes sheen3 {
+      0%, 35% { transform: translateX(-180px); opacity: 0; }
+      38% { opacity: 1; }
+      52% { transform: translateX(400px); opacity: 0; }
+      100% { transform: translateX(400px); opacity: 0; }
+    }
+  </style>
+
+  <!-- Base Canvas -->
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="900" height="326" rx="10" fill="url(#bgGrad)"/>
+    <rect x="0" y="0" width="900" height="326" fill="url(#ambientGlow)"/>
+
+    <!-- Subtle architectural grid lines -->
+    <g stroke="#C8BFA9" stroke-width="0.6" opacity="0.22">
+      <line x1="42" y1="0" x2="42" y2="326"/>
+      <line x1="464" y1="48" x2="464" y2="274"/>
+      <line x1="858" y1="0" x2="858" y2="326"/>
+      <line x1="0" y1="48" x2="900" y2="48"/>
+      <line x1="0" y1="274" x2="900" y2="274"/>
+    </g>
+
+    <!-- Background horological orbital dial behind left section -->
+    <g class="orbit-spin" opacity="0.55">
+      <circle cx="228" cy="152" r="102" stroke="#9A7732" stroke-width="0.6" stroke-dasharray="2 6" opacity="0.24"/>
+      <circle cx="228" cy="152" r="78" stroke="#DDD6C7" stroke-width="0.6" opacity="0.35"/>
+      <line x1="332.0" y1="152.0" x2="342.0" y2="152.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="334.4" y1="170.8" x2="340.3" y2="171.8" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="329.5" y1="188.9" x2="335.1" y2="191.0" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="318.1" y1="204.0" x2="326.7" y2="209.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="310.7" y1="221.4" x2="315.3" y2="225.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="297.4" y1="234.7" x2="301.3" y2="239.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="280.0" y1="242.1" x2="285.0" y2="250.7" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="264.9" y1="253.5" x2="267.0" y2="259.1" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="246.8" y1="258.4" x2="247.8" y2="264.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="228.0" y1="256.0" x2="228.0" y2="266.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="209.2" y1="258.4" x2="208.2" y2="264.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="191.1" y1="253.5" x2="189.0" y2="259.1" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="176.0" y1="242.1" x2="171.0" y2="250.7" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="158.6" y1="234.7" x2="154.7" y2="239.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="145.3" y1="221.4" x2="140.7" y2="225.3" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="137.9" y1="204.0" x2="129.3" y2="209.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="126.5" y1="188.9" x2="120.9" y2="191.0" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="121.6" y1="170.8" x2="115.7" y2="171.8" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="124.0" y1="152.0" x2="114.0" y2="152.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="121.6" y1="133.2" x2="115.7" y2="132.2" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="126.5" y1="115.1" x2="120.9" y2="113.0" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="137.9" y1="100.0" x2="129.3" y2="95.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="145.3" y1="82.6" x2="140.7" y2="78.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="158.6" y1="69.3" x2="154.7" y2="64.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="176.0" y1="61.9" x2="171.0" y2="53.3" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="191.1" y1="50.5" x2="189.0" y2="44.9" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="209.2" y1="45.6" x2="208.2" y2="39.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="228.0" y1="48.0" x2="228.0" y2="38.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="246.8" y1="45.6" x2="247.8" y2="39.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="264.9" y1="50.5" x2="267.0" y2="44.9" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="280.0" y1="61.9" x2="285.0" y2="53.3" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="297.4" y1="69.3" x2="301.3" y2="64.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="310.7" y1="82.6" x2="315.3" y2="78.7" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="318.1" y1="100.0" x2="326.7" y2="95.0" stroke="#9A7732" stroke-width="0.8" opacity="0.22"/>
+      <line x1="329.5" y1="115.1" x2="335.1" y2="113.0" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+      <line x1="334.4" y1="133.2" x2="340.3" y2="132.2" stroke="#9A7732" stroke-width="0.8" opacity="0.10"/>
+    </g>
+
+    <!-- Shimmer beam across top hairline -->
+    <rect class="border-beam" x="0" y="0" width="200" height="1.5" fill="url(#topShimmer)"/>
+  </g>
+
+  <!-- Outer Hairline Border -->
+  <rect x="0.5" y="0.5" width="899" height="325" rx="10" stroke="#DDD6C7" stroke-width="1"/>
+
+  <!-- Precision Corner Registration Brackets -->
+  <g stroke="#9A7732" stroke-width="1" opacity="0.65">
+    <path d="M14 22 L14 14 L22 14"/>
+    <path d="M878 14 L886 14 L886 22"/>
+    <path d="M14 304 L14 312 L22 312"/>
+    <path d="M878 312 L886 312 L886 304"/>
+  </g>
+
+  <!-- TOP MICRO-HEADER -->
+  <text x="42" y="30" class="mono" font-size="9.5" letter-spacing="2.4" fill="#7C828E">TONE-LEH ATELIER  //  NO. 01</text>
+  <g transform="translate(598, 26)">
+    <circle cx="0" cy="0" r="3" fill="#9A7732" class="jewel-pulse"/>
+    <circle cx="0" cy="0" r="6" stroke="#9A7732" stroke-width="0.7" opacity="0.35" class="jewel-pulse"/>
+  </g>
+  <text x="858" y="30" text-anchor="end" class="mono" font-size="9.5" letter-spacing="1.8" fill="#7C828E">LOCAL-FIRST · ZERO RUNTIME DEPS</text>
+
+  <!-- LEFT EDITORIAL WORDMARK & MANIFESTO -->
+  <text x="44" y="88" class="mono" font-size="9.5" letter-spacing="2.8" fill="#9A7732">AGENT INSTRUMENTATION</text>
+
+  <text x="42" y="140" class="serif" font-size="44" font-weight="400" letter-spacing="6.5" fill="url(#wordGrad)">TONE · LEH</text>
+
+  <!-- Champagne-gold precision divider -->
+  <line x1="44" y1="160" x2="104" y2="160" stroke="#9A7732" stroke-width="1.4"/>
+  <rect x="112" y="157.5" width="4.5" height="4.5" transform="rotate(45 114.25 159.75)" fill="#9A7732" opacity="0.85"/>
+
+  <text x="44" y="191" class="sans" font-size="14" font-weight="500" letter-spacing="0.2" fill="#121418">Precision instruments for AI-native workflows.</text>
+  <text x="44" y="213" class="sans" font-size="12" fill="#4B525E">Native MCP Apps · Glass-box · Zero runtime dependencies.</text>
+  <text x="44" y="241" class="sans" font-size="11.5" letter-spacing="0.6" fill="#7C828E">为 AI 原生工作流打造的精密工具 · 本地优先 · 与 AI 共筑</text>
+
+  <!-- RIGHT PANEL: THE DECISION // AGENT ROSTER -->
+  <rect x="478" y="64" width="380" height="188" rx="7" fill="#FCFBF8" stroke="#DDD6C7" stroke-width="1"/>
+  <!-- Panel Header -->
+  <text x="496" y="85" class="mono" font-size="9.5" letter-spacing="2" fill="#7C828E">AGENT ROSTER  //  THE DECISION</text>
+  <text x="840" y="85" text-anchor="end" class="mono" font-size="9" letter-spacing="1.6" fill="#9A7732">2026 Q4</text>
+  <line x1="494" y1="95" x2="842" y2="95" stroke="#EAE4D7" stroke-width="1"/>
+
+  <!-- ROW 01: CLAUDE CODE -->
+  <g>
+    <text x="498" y="122" class="mono row1-txt" font-size="10" fill="#7C828E">01</text>
+    <text x="524" y="122" class="mono row1-txt" font-size="12.5" font-weight="500" letter-spacing="1.2" fill="#121418">CLAUDE CODE</text>
+    <line x1="521" y1="118" x2="622" y2="118" stroke="#9A7732" stroke-width="1.35" class="strike-1"/>
+    <text x="840" y="121" text-anchor="end" class="sans tag1" font-size="10" letter-spacing="0.6" fill="#6B7280">祝一切顺利 · WISHED WELL</text>
+  </g>
+  <line x1="494" y1="136" x2="842" y2="136" stroke="#EAE4D7" stroke-width="0.8"/>
+
+  <!-- ROW 02: CODEX / CHATGPT -->
+  <g>
+    <text x="498" y="162" class="mono row2-txt" font-size="10" fill="#7C828E">02</text>
+    <text x="524" y="162" class="mono row2-txt" font-size="12.5" font-weight="500" letter-spacing="1.1" fill="#121418">CODEX / CHATGPT</text>
+    <line x1="521" y1="158" x2="657" y2="158" stroke="#9A7732" stroke-width="1.35" class="strike-2"/>
+    <text x="840" y="161" text-anchor="end" class="sans tag2" font-size="10" letter-spacing="0.6" fill="#6B7280">老东家 · PAST CHAPTER</text>
+  </g>
+
+  <!-- ROW 03: GOOGLE ANTIGRAVITY · GEMINI (ACTIVE CHAMPAGNE GOLD) -->
+  <rect x="492" y="186" width="352" height="50" rx="5" fill="rgba(154, 119, 50, 0.08)" stroke="#9A7732" stroke-width="1" class="row3-frame"/>
+  <g clip-path="url(#activeRowClip)">
+    <rect x="492" y="186" width="140" height="50" fill="url(#rowSheen)" class="row3-sheen"/>
+  </g>
+  <circle cx="506" cy="206" r="3" fill="#9A7732" class="jewel-pulse"/>
+  <text x="520" y="209" class="mono" font-size="12" font-weight="600" letter-spacing="1.1" fill="#9A7732">ANTIGRAVITY · GEMINI</text>
+  <text x="520" y="226" class="sans" font-size="9.2" letter-spacing="0.3" fill="#4B525E">哈基米 · NEVER DOUBTED FOR A SECOND</text>
+
+  <!-- Active pill on right -->
+  <g class="row3-badge">
+    <rect x="744" y="198" width="90" height="24" rx="4" fill="#FCFBF8" stroke="#9A7732" stroke-width="0.9"/>
+    <text x="789" y="213.5" text-anchor="middle" class="sans" font-size="9.5" font-weight="600" letter-spacing="0.6" fill="#9A7732">ALL IN · 好兄弟</text>
+  </g>
+
+  <!-- BOTTOM PRESS-RELEASE FOOTNOTE -->
+  <text x="42" y="303" class="mono" font-size="9.5" letter-spacing="0.3" fill="#7C828E">PRESS NOTE // &quot;Always been close brothers. Wishing former subscriptions all the best.&quot;</text>
+  <text x="858" y="303" text-anchor="end" class="sans" font-size="10.5" letter-spacing="0.5" fill="#B3924D">「 一直是我很好的兄弟 · 至于老东家，祝他们一切顺利 」</text>
+</svg>

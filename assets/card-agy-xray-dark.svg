@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438 142" width="438" height="142" fill="none">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="438" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0D12"/>
+      <stop offset="100%" stop-color="#0E1016"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+    .mono { font-family: 'SF Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace; }
+  </style>
+
+  <!-- Card Frame -->
+  <rect x="0.5" y="0.5" width="437" height="141" rx="8" fill="url(#cBg)" stroke="#1F242E" stroke-width="1"/>
+  <!-- Top micro gold accent bar -->
+  <line x1="18" y1="0.5" x2="62" y2="0.5" stroke="#D4B475" stroke-width="1.5"/>
+
+  <!-- Top Row: Index + Category Tag -->
+  <text x="18" y="24" class="mono" font-size="9.5" font-weight="600" letter-spacing="1.8" fill="#D4B475">01</text>
+  <rect x="284" y="12" width="136" height="18" rx="3.5" fill="#12151D" stroke="#262C38" stroke-width="0.8"/>
+  <text x="352" y="24" text-anchor="middle" class="mono" font-size="8.5" letter-spacing="1.2" fill="#6B7280">MCP APP · 0 DEPS</text>
+
+  <!-- Icon Bezel -->
+  <g transform="translate(18, 42)">
+    <rect x="0.5" y="0.5" width="35" height="35" rx="6" fill="#08090C" stroke="#1F242E" stroke-width="0.9"/>
+    
+      <circle cx="18" cy="18" r="10" stroke="#D4B475" stroke-width="1.2"/>
+      <circle cx="18" cy="18" r="4.5" stroke="#6B7280" stroke-width="1"/>
+      <line x1="18" y1="4" x2="18" y2="8.5" stroke="#D4B475" stroke-width="1.1"/>
+      <line x1="18" y1="27.5" x2="18" y2="32" stroke="#D4B475" stroke-width="1.1"/>
+      <line x1="4" y1="18" x2="8.5" y2="18" stroke="#D4B475" stroke-width="1.1"/>
+      <line x1="27.5" y1="18" x2="32" y2="18" stroke="#D4B475" stroke-width="1.1"/>
+    
+  </g>
+
+  <!-- Title & Chinese Subtitle -->
+  <text x="68" y="57" class="sans" font-size="15" font-weight="600" letter-spacing="0.2" fill="#F2EFE8">Agy X-Ray</text>
+  <text x="150" y="57" class="sans" font-size="11.5" fill="#A88B52">·  透视镜</text>
+
+  <!-- Two-line Description -->
+  <text x="68" y="77" class="sans" font-size="11.2" fill="#A8B0BC">Context window X-Ray, live workspace file tree &amp;</text>
+  <text x="68" y="94" class="sans" font-size="11.2" fill="#A8B0BC">bilingual cross-session BM25 time machine.</text>
+
+  <!-- Bottom Meta Footer -->
+  <line x1="18" y1="112" x2="420" y2="112" stroke="#171B23" stroke-width="0.8"/>
+  <text x="18" y="129" class="mono" font-size="9.2" letter-spacing="0.8" fill="#6B7280">TypeScript  ·  MIT  ·  v0.1.0</text>
+  <text x="420" y="129" text-anchor="end" class="mono" font-size="10.5" fill="#D4B475">VIEW REPO ↗</text>
+</svg>
