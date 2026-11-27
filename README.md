@@ -19,18 +19,7 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/tone-leh/agy-xray"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-xray-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-xray-light.svg" /><img src="./assets/card-agy-xray-dark.svg" alt="Agy X-Ray" width="49%" /></picture></a>&nbsp;
-  <a href="https://github.com/tone-leh/agy-mem"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-mem-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-mem-light.svg" /><img src="./assets/card-agy-mem-dark.svg" alt="Agy Mem" width="49%" /></picture></a>
-</p>
-<p align="center">
-  <a href="https://github.com/tone-leh/agy-canvas"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-canvas-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-canvas-light.svg" /><img src="./assets/card-agy-canvas-dark.svg" alt="Agy Canvas" width="49%" /></picture></a>&nbsp;
-  <a href="https://github.com/tone-leh/agy-guard"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-guard-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-guard-light.svg" /><img src="./assets/card-agy-guard-dark.svg" alt="Agy Guard" width="49%" /></picture></a>
-</p>
-<p align="center">
-  <a href="https://github.com/tone-leh/agy-remote"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-remote-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-remote-light.svg" /><img src="./assets/card-agy-remote-dark.svg" alt="Agy Remote" width="49%" /></picture></a>&nbsp;
-  <a href="https://github.com/tone-leh/agy-review"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-review-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-review-light.svg" /><img src="./assets/card-agy-review-dark.svg" alt="Agy Review" width="49%" /></picture></a>
-</p>
-<p align="center">
+  <a href="https://github.com/tone-leh/agy-NOV"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-nov-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-nov-light.svg" /><img src="./assets/card-agy-nov-dark.svg" alt="agy-NOV" width="49%" /></picture></a>&nbsp;
   <a href="https://github.com/tone-leh/agy-session-guard"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-agy-session-guard-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./assets/card-agy-session-guard-light.svg" /><img src="./assets/card-agy-session-guard-dark.svg" alt="Session Guard" width="49%" /></picture></a>
 </p>
 
